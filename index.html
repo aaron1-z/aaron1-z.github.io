@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Catamaran', sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInAnimation ease 1s forwards;
+        }
+
+        .header h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            color: #0056b3;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .about {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInAnimation ease 1s forwards;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .aboutText {
+            margin-top: 20px;
+        }
+
+        .aboutText h4 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .aboutText p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .works, .computerScience, .books {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInAnimation ease 1s forwards;
+        }
+
+        .works h1, .computerScience h1, .books h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .works h2, .computerScience h2, .books h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .works p, .computerScience p, .books p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .works a, .computerScience a, .books a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .works a:hover, .computerScience a:hover, .books a:hover {
+            text-decoration: underline;
+        }
+
+        .books img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <!-- Pageclip CSS -->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+<body>
+    <div class="header">
+        <h2>Aditya Singh</h2>
+        <a href="mailto:your-email@example.com">22053220@kiit.ac.in</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#books">Books</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <img src="WhatsApp Image 2023-07-12 at 11.56.46.jpg" alt="Profile Image" class="profile-image">
+        <div id="home" class="about">
+            <h2>Hi there! I'm Aditya Singh</h2>
+            <div class="aboutText">
+                <h4>About me</h4>
+                <p>Student Researcher and CS Undergraduate</p>
+            </div>
+        </div>
+        <div id="works" class="works">
+            <h1>Works</h1>
+            <div class="Physics">
+                <h2>Paper 1</h2>
+                <p>TOER - <a href="https://doi.org/10.5281/zenodo.7971724">Paper Link</a></p>
+                <h2>Paper 2</h2>
+                <p>The Three Clocks Theory - <a href="https://doi.org/10.5281/zenodo.7521534">Paper Link</a></p>
+                <h2>Paper 3</h2>
+                <p>Hybrid Intelligent System - <a href="https://doi.org/10.59615/ijie.3.1.55">Paper Link</a></p>
+            </div>
+        </div>
+        <div id="projects" class="computerScience">
+            <h1>CS Projects</h1>
+            <ol>
+                <li><a href="https://codepen.io/aaron2712/pen/dyKEYGz">Waves</a></li>
+                <li><a href="https://codepen.io/aaron2712/pen/abJOEbP">Tic-Tac-Toe</a></li>
+                <li><a href="https://codepen.io/aaron2712/pen/gOKzLvo">Cosmos Chaos - A game</a></li>
+                <li><a href="https://codepen.io/aaron2712/pen/WNyQNvg">Fuzzy</a></li>
+                <li><a href="https://github.com/AdityaSingh27894/TSF-Website-Project-">TSF Intern</a></li>
+            </ol>
+        </div>
+        <div id="books" class="books">
+            <h1>Books 📚</h1>
+            <ol>
+                <li><a href="https://www.amazon.co.uk/dp/B0CBKVQKLC?ref_=cm_sw_r_cp_ud_dp_HW0FTBVAW51DZ9A4Q75M">The Quantum
+                        Reunion</a></li>
+            </ol>
+            <img src="WhatsApp Image 2023-07-08 at 16.28.08.jpg" alt="Book Cover" class="book-cover">
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Pageclip JavaScript -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script>
+        // Add fade-in animation to About Me section on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const aboutSection = document.querySelector('.about');
+            aboutSection.classList.add('fade-in');
+        });
+        // Add slide-in animation to Works section when scrolling to it
+        window.addEventListener('scroll', function () {
+            const worksSection = document.querySelector('.works');
+            const worksSectionPosition = worksSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (worksSectionPosition < windowHeight) {
+                worksSection.classList.add('slide-in');
+            }
+        });
+        // Add slide-in animation to Books section when scrolling to it
+        window.addEventListener('scroll', function () {
+            const booksSection = document.querySelector('.books');
+            const booksSectionPosition = booksSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (booksSectionPosition < windowHeight) {
+                booksSection.classList.add('slide-in');
+            }
+        });
+    </script>
+</body>
+</html>
