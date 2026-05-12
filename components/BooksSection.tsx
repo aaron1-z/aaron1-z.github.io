@@ -40,6 +40,10 @@ const books: Book[] = [
     description: 'A thrilling and thought-provoking ebook that immerses readers in a world of extraordinary technological wonders, deep philosophical questions, and the indomitable spirit of exploration. It invites you to ponder the possibilities of a future where science and humanity intertwine, where friendships are tested, and where the quest for knowledge transcends the boundaries of time and space.',
     coverImage: '/book-covers/quantum-reunion.jpg',
   },
+  title: 'Continuum',
+    subtitle: 'Beyond the Edge of Time',
+    description: 'Ninety thousand years ago, humanity reached the end of everything it had ever wanted to build. It looked around at a thousand perfect worlds and felt nothing worth preserving..',
+    coverImage: '/book-covers/continuum.jpg',
 ]
 
 function BookCard({ book, index }: { book: Book; index: number }) {
